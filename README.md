@@ -34,7 +34,7 @@ This platform presents academic programs, departments, faculty members, campus n
 ### Installation & Running Locally
 1. **Clone the Repository:**
    ```bash
-   git clone [https://github.com/your-username/fcds-web.git](https://github.com/your-username/fcds-web.git)
+   git clone [https://github.com/saif-yousry/fcds-web.git](https://github.com/saif-yousry/fcds-web.git)
    cd fcds-web
 2. **Install Dependencies:**
     npm install
