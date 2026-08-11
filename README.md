@@ -42,6 +42,7 @@ This platform presents academic programs, departments, faculty members, campus n
     npm run dev
 
 ### Project Architecture
+```text
 src/
 ├── assets/          # Static images and icons
 ├── components/      # Reusable UI components
@@ -55,6 +56,7 @@ src/
 ├── i18n.js          # Core i18n configuration
 ├── App.jsx          # Root component
 └── main.jsx         # Entry point
+```
 ### Commit Conventions
 This project strictly enforces Conventional Commit standards:
 -   feat: New features or architecture setups
