@@ -45,7 +45,10 @@
     "errorOccurred": "An error occurred",
     "retry": "Try Again",
     "learnMore": "Learn More",
-    "viewAll": "View All"
+    "viewAll": "View All",
+    "clearSearch": "Clear search",
+    "all": "All",
+    "clearFilters": "Clear filters"
   },
   "home": {
     "heroBadge": "Faculty of Computers & Data Science",
@@ -113,5 +116,58 @@
     "valuesCommunity": "Community Engagement",
     "valuesDiversity": "Diversity & Inclusion",
     "valuesCollaboration": "Collaboration & Teamwork"
+  },
+  "announcements": {
+    "eyebrow": "Faculty Announcements",
+    "title": "Important Announcements",
+    "description": "Stay updated with the latest faculty announcements and decisions.",
+    "categoryFilter": "Filter by category",
+    "noResults": "No results found",
+    "noResultsDescription": "Sorry, there are no announcements matching your search criteria.",
+    "priority": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "viewAnnouncement": "View Announcement",
+    "categories": {
+      "general": "General",
+      "academic": "Academic",
+      "administrative": "Administrative"
+    }
+  },
+  "news": {
+    "eyebrow": "Faculty News",
+    "title": "Latest News",
+    "description": "Stay updated with all the faculty events and activities.",
+    "filtersLabel": "News filters",
+    "resultsCount": "{{count}} news found",
+    "imagePlaceholder": "No image available",
+    "articleNotFound": "Article not found",
+    "backToNews": "Back to news"
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Get in Touch",
+    "description": "We are here to help, feel free to contact us.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone Number",
+    "locationLabel": "Location",
+    "location": "Faculty of Computers and Data Science, Alexandria University",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "message": "Message",
+    "submit": "Send",
+    "success": "Your message has been sent successfully!",
+    "validation": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Invalid phone number",
+      "messageRequired": "Message is required",
+      "messageShort": "Message is too short"
+    }
   }
 }

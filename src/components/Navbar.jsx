@@ -59,6 +59,9 @@ export default function Navbar() {
           <Link to="/contact" className="hover:text-blue-600 transition-colors">
             {t('nav_contact', isArabic ? 'تواصل معنا' : 'Contact')}
           </Link>
+          <Link to="/announcements" className="hover:text-blue-600 transition-colors">
+            {t('nav_announcement', isArabic ? 'اعلانات ' : 'Announcement')}
+          </Link>
         </nav>
 
         {/* Language Switcher Button */}

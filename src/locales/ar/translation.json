@@ -46,7 +46,10 @@
     "errorOccurred": "حدث خطأ",
     "retry": "حاول مجددًا",
     "learnMore": "اعرف المزيد",
-    "viewAll": "عرض الكل"
+    "viewAll": "عرض الكل",
+    "clearSearch": "مسح البحث",
+    "all": "الكل",
+    "clearFilters": "مسح الفلاتر"
   },
   "home": {
     "heroBadge": "كلية الحاسبات وعلوم البيانات",
@@ -114,5 +117,58 @@
     "valuesCommunity": "خدمة المجتمع",
     "valuesDiversity": "التنوع والشمولية",
     "valuesCollaboration": "التعاون والعمل الجماعي"
+  },
+  "announcements": {
+    "eyebrow": "إعلانات الكلية",
+    "title": "إعلانات هامة",
+    "description": "تابع آخر الإعلانات والقرارات المتعلقة بالكلية.",
+    "categoryFilter": "تصفية حسب الفئة",
+    "noResults": "لا توجد نتائج",
+    "noResultsDescription": "عذراً، لا توجد إعلانات مطابقة لمعايير البحث.",
+    "priority": {
+      "high": "هام",
+      "medium": "متوسط",
+      "low": "عادي"
+    },
+    "viewAnnouncement": "عرض الإعلان",
+    "categories": {
+      "general": "عام",
+      "academic": "أكاديمي",
+      "administrative": "إداري"
+    }
+  },
+  "news": {
+    "eyebrow": "أخبار الكلية",
+    "title": "آخر الأخبار",
+    "description": "تابع كل جديد عن فعاليات وأنشطة الكلية.",
+    "filtersLabel": "فلاتر الأخبار",
+    "resultsCount": "تم العثور على {{count}} خبر",
+    "imagePlaceholder": "لا توجد صورة",
+    "articleNotFound": "الخبر غير موجود",
+    "backToNews": "العودة للأخبار"
+  },
+  "contact": {
+    "eyebrow": "اتصل بنا",
+    "title": "تواصل مع الكلية",
+    "description": "نحن هنا لمساعدتك، لا تتردد في مراسلتنا.",
+    "emailLabel": "البريد الإلكتروني",
+    "phoneLabel": "رقم الهاتف",
+    "locationLabel": "العنوان",
+    "location": "كلية الحاسبات وعلوم البيانات، جامعة الإسكندرية",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "message": "الرسالة",
+    "submit": "إرسال",
+    "success": "تم إرسال رسالتك بنجاح!",
+    "validation": {
+      "nameRequired": "الاسم مطلوب",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "emailInvalid": "البريد الإلكتروني غير صالح",
+      "phoneRequired": "رقم الهاتف مطلوب",
+      "phoneInvalid": "رقم الهاتف غير صالح",
+      "messageRequired": "الرسالة مطلوبة",
+      "messageShort": "الرسالة قصيرة جداً"
+    }
   }
 }

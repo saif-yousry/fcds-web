@@ -34,6 +34,10 @@ const FeaturedNews = () => {
               { year: 'numeric', month: 'short', day: 'numeric' }
             );
 
+            const categoryText = typeof item.category === 'object'
+              ? (item.category[currentLang] || item.category.en)
+              : item.category;
+
             return (
               <article
                 key={item.id}
@@ -43,7 +47,7 @@ const FeaturedNews = () => {
                 <div className="flex items-center justify-between">
                   {item.category && (
                     <span className="bg-primary-50 text-primary-600 text-xs font-semibold px-3 py-1 rounded-full">
-                      {item.category}
+                      {categoryText}
                     </span>
                   )}
                   <time dateTime={item.date} className="text-sm text-gray-400">

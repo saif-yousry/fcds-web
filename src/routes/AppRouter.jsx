@@ -17,10 +17,10 @@ import FacultyPage from '../components/Faculty/FacultyPage';
 import FacultyDetails from '../components/Faculty/FacultyDetails';
 
 // Placeholders for remaining pages
-const News = () => <div style={{ padding: '2rem' }}>News Page</div>;
-const NewsDetails = () => <div style={{ padding: '2rem' }}>News Details Page</div>;
-const Announcements = () => <div style={{ padding: '2rem' }}>Announcements Page</div>;
-const Contact = () => <div style={{ padding: '2rem' }}>Contact Page</div>;
+import { News } from '../pages/News';
+import { NewsDetails } from '../pages/NewsDetails';
+import { Announcements } from '../pages/Announcements';
+import { Contact } from '../pages/Contact';
 
 export const AppRouter = () => {
   const { i18n } = useTranslation();
@@ -46,7 +46,9 @@ export const AppRouter = () => {
         {/* Other Routes */}
         <Route path="/news" element={<News />} />
         <Route path="/news/:id" element={<NewsDetails />} />
-        <Route path="/announcements" element={<Announcements />} />
+        
+
+        <Route path="/announcement" element={<Announcements />} />
         <Route path="/services" element={<Services />} />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
