@@ -412,7 +412,6 @@
   color: #000000 !important;
 }
 
-/* لو فيه خطأ يظهر بوردر أحمر واضح */
 .contact-form .has-error input,
 .contact-form .has-error textarea {
   border: 2px solid #ef4444 !important;
