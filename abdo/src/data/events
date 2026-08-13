@@ -1,0 +1,10 @@
+export const eventsData = [
+  {
+    id: "e1",
+    title: { ar: "المؤتمر الدولي لعلوم البيانات", en: "International Data Science Conference" },
+    date: "2026-09-15",
+    location: { ar: "القاعة الكبرى للمؤتمرات", en: "Grand Conference Hall" },
+    description: { ar: "مؤتمر يناقش أحدث مستجدات تعلم الآلة وتحليل البيانات.", en: "Conference discussing the latest in machine learning and data analytics." },
+    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600"
+  }
+];
