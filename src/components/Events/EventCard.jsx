@@ -8,7 +8,7 @@ const EventCard = ({ event }) => {
 
   // Format date based on current language
   const formattedDate = new Date(event.date).toLocaleDateString(
-    currentLang === 'ar' ? 'ar-EG' : 'en-US',
+    currentLang === 'ar' ? 'ar' : 'en',
     { year: 'numeric', month: 'long', day: 'numeric' }
   );
 

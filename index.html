@@ -1,14 +1,9 @@
 <!doctype html>
-<<<<<<< HEAD
 <html lang="ar" dir="rtl">
-=======
-<html lang="en">
->>>>>>> origin/task3-essam
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
     <title>Faculty of Computers & Information | FCDS</title>
 
     <!-- Google Fonts: Cairo -->
@@ -16,25 +11,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 👈 السكريبت ده بينفذ فحص اللغة والاتجاه فوراً قبل ما React يرسم الكاردز -->
+    <script>
+      (function () {
+        try {
+          var savedLang = localStorage.getItem('i18nextLng') || 'ar';
+          var isArabic = savedLang.startsWith('ar');
+          var dir = isArabic ? 'rtl' : 'ltr';
+          var lang = isArabic ? 'ar' : 'en';
+
+          document.documentElement.setAttribute('dir', dir);
+          document.documentElement.setAttribute('lang', lang);
+        } catch (e) {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+        }
+      })();
+    </script>
 
     <style>
-      /* تطبيق خط Cairo على كامل الموقع */
       * {
         font-family: 'Cairo', sans-serif;
       }
     </style>
-=======
-    <title>fcds-web</title>
->>>>>>> origin/task3-essam
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> origin/task3-essam

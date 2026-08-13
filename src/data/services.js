@@ -3,9 +3,6 @@ export const servicesData = [
     id: "s1",
     title: { ar: "منصة التسجيل الأكاديمي", en: "Academic Registration Portal" },
     category: "Student",
-<<<<<<< HEAD
-    description: { ar: "تسجيل المواد الدراسية والجداول الفصلية.", en: "Course registration and semester timetables." },
-=======
     description: {
       ar: "تسجيل المواد الدراسية، إدارة الجداول الفصلية، ومتابعة السجل الأكاديمي إلكترونيًا.",
       en: "Register for courses, manage semester timetables, and track your academic record online."
@@ -66,7 +63,6 @@ export const servicesData = [
       en: "An interactive learning environment with recorded lectures, online quizzes, and academic discussion forums."
     },
     icon: "Monitor",
->>>>>>> origin/task3-essam
     link: "#"
   }
 ];

@@ -4,16 +4,22 @@ import { useTranslation } from 'react-i18next';
 export const useLanguage = () => {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
-
   useEffect(() => {
     const currentLang = i18n.language || 'ar';
-    const dir = currentLang.startsWith('ar') ? 'rtl' : 'ltr';
+    const dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+    
     document.documentElement.dir = dir;
     document.documentElement.lang = currentLang;
+
+    localStorage.setItem('i18nextLng', currentLang);
   }, [i18n.language]);
 
-  return { currentLang: i18n.language, changeLanguage };
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
+  return {
+    currentLang: i18n.language,
+    changeLanguage,
+  };
 };

@@ -6,7 +6,7 @@ import { facultyData } from '../../data/faculty';
 
 const FacultyPage = () => {
   const { i18n, t } = useTranslation();
-  const currentLang = (i18n.language || 'en').substring(0, 2);
+  const currentLang = (i18n.language || 'ar').substring(0, 2);
   
   
   const [searchParams] = useSearchParams();

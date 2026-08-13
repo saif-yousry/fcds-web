@@ -1,42 +1,50 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
+import { useLanguage } from '../../hooks/useLanguage';
 
 const ProgramCard = ({ program }) => {
-  const { i18n, t } = useTranslation();
-  
-  const currentLang = (i18n.language || 'en').substring(0, 2);
+  const { t } = useTranslation();
+  const { currentLang } = useLanguage();
+
+  const langKey = currentLang?.startsWith('en') ? 'en' : 'ar';
+  const isArabic = langKey === 'ar';
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 overflow-hidden flex flex-col h-full">
-      <div className="p-6 flex-grow">
+    <div 
+      className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 overflow-hidden flex flex-col h-full text-start"
+      dir={isArabic ? 'rtl' : 'ltr'}
+    >
+      <div className="p-6 flex-grow text-start">
         
+        {/* Program type*/}
         <div className="mb-4 inline-block px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-xs font-semibold">
-          {program.type === 'General' ? t('general_program', 'برنامج عام') : t('specialized_program', 'برنامج متخصص')}
+          {program?.type === 'General' ? t('programs.general_program') : t('programs.specialized_program')}
         </div>
         
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
-          {program.name[currentLang]}
+        {/* Pogram name */}
+        <h3 className="text-xl font-bold text-gray-900 mb-2 text-start">
+          {program?.name?.[langKey] || program?.name?.ar || ''}
         </h3>
         
-        <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
-          {program.description[currentLang]}
+        {/* Program Desc*/}
+        <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 text-start">
+          {program?.description?.[langKey] || program?.description?.ar || ''}
         </p>
       </div>
 
-      {/* buttons only for style not functional */}
+      {/* Buttoms */}
       <div className="p-6 pt-0 flex flex-row items-center gap-3">
         <button 
           type="button"
           className="flex-1 bg-blue-600 text-white text-center py-2 px-4 rounded-lg font-medium text-sm cursor-default"
         >
-          {currentLang === 'ar' ? 'معلومات البرنامج' : 'Program Info'}
+          {t('programs.program_info')}
         </button>
         <button 
           type="button"
           className="flex-1 bg-gray-100 text-gray-800 text-center py-2 px-4 rounded-lg font-medium text-sm cursor-default"
         >
-          {currentLang === 'ar' ? 'طريقة التسجيل' : 'Registration Method'}
+          {t('programs.registration_method')}
         </button>
       </div>
     </div>

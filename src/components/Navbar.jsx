@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
-  const [currentLang, setCurrentLang] = useState(() => {
-    return localStorage.getItem('appLang') || 'ar';
-  });
+  const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = currentLang;
-    localStorage.setItem('appLang', currentLang); 
-  }, [currentLang]);
+  const isArabic = i18n.language?.startsWith('ar');
 
   const toggleLanguage = () => {
-    setCurrentLang((prevLang) => (prevLang === 'ar' ? 'en' : 'ar'));
+    const nextLang = isArabic ? 'en' : 'ar';
+    i18n.changeLanguage(nextLang);
   };
 
   return (
@@ -22,40 +19,46 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Logo */}
-        <div className="flex items-center gap-3 cursor-pointer">
-            <img 
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxjVoGDGk4g1yrsA8HO6TRl_ALJrSMcd_MpswL1wqsvQ&s=10" 
-                alt="Alexandria University Logo" 
-                className="w-20 h-20 object-contain"
-            />
+        <Link to="/" className="flex items-center gap-3 cursor-pointer">
+          <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxjVoGDGk4g1yrsA8HO6TRl_ALJrSMcd_MpswL1wqsvQ&s=10" 
+            alt="Alexandria University Logo" 
+            className="w-20 h-20 object-contain"
+          />
           
           <div>
             <h1 className="font-bold text-slate-900 leading-tight text-base">
-              {currentLang === 'ar' ? 'كلية الحاسبات وعلوم البيانات' : 'Faculty of Computers & Data Science'}
+              {isArabic ? 'كلية الحاسبات وعلوم البيانات' : 'Faculty of Computers & Data Science'}
             </h1>
             <p className="text-xs text-slate-400 font-medium">
-              {currentLang === 'ar' ? 'جامعة الإسكندرية' : 'Alexandria University'}
+              {isArabic ? 'جامعة الإسكندرية' : 'Alexandria University'}
             </p>
           </div>
-        </div>
+        </Link>
 
         {/* Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-          <a href="about" className="hover:text-blue-600 transition-colors">
-            {currentLang === 'ar' ? 'عن الكلية' : 'About'}
-          </a>
-          <a href="departments" className="hover:text-blue-600 transition-colors">
-            {currentLang === 'ar' ? 'الأقسام' : 'Departments'}
-          </a>
-          <a href="programs" className="hover:text-blue-600 transition-colors">
-            {currentLang === 'ar' ? 'البرامج' : 'Programs'}
-          </a>
-          <a href="news" className="hover:text-blue-600 transition-colors">
-            {currentLang === 'ar' ? 'الأخبار' : 'News'}
-          </a>
-          <a href="contact" className="hover:text-blue-600 transition-colors">
-            {currentLang === 'ar' ? 'تواصل معنا' : 'Contact'}
-          </a>
+          <Link to="/about" className="hover:text-blue-600 transition-colors">
+            {t('nav_about', isArabic ? 'عن الكلية' : 'About')}
+          </Link>
+          <Link to="/departments" className="hover:text-blue-600 transition-colors">
+            {t('nav_departments', isArabic ? 'الأقسام' : 'Departments')}
+          </Link>
+          <Link to="/programs" className="hover:text-blue-600 transition-colors">
+            {t('nav_programs', isArabic ? 'البرامج' : 'Programs')}
+          </Link>
+          <Link to="/news" className="hover:text-blue-600 transition-colors">
+            {t('nav_news', isArabic ? 'الأخبار' : 'News')}
+          </Link>
+          <Link to="/services" className="hover:text-blue-600 transition-colors">
+            {t('nav_services', isArabic ? 'الخدمات' : 'Services')}
+          </Link>
+          <Link to="/events" className="hover:text-blue-600 transition-colors">
+            {t('nav_events', isArabic ? 'أحداث' : 'Events')}
+          </Link>
+          <Link to="/contact" className="hover:text-blue-600 transition-colors">
+            {t('nav_contact', isArabic ? 'تواصل معنا' : 'Contact')}
+          </Link>
         </nav>
 
         {/* Language Switcher Button */}
@@ -67,7 +70,7 @@ export default function Navbar() {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
             </svg>
-            <span>{currentLang === 'ar' ? 'English' : 'العربية'}</span>
+            <span>{isArabic ? 'English' : 'العربية'}</span>
           </button>
         </div>
 

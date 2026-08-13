@@ -1,8 +1,19 @@
-<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Cairo:wght@400;600;700;800&display=swap');
 @import "tailwindcss";
 
-/* 1. Definining Theme Variables directly */
+/* ===== Custom Theme Tokens (Tailwind v4) ===== */
 @theme {
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #0062D0;
+  --color-primary-700: #0052b3;
+  --color-primary-800: #003d86;
+  --color-primary-900: #002a5c;
+
   --color-primary: #2563eb;
   --color-primary-hover: #1d4ed8;
   --color-heading: #111827;
@@ -11,13 +22,41 @@
   --color-border: #e5e7eb;
   --color-bg-page: #f9fafb;
   --color-bg-card: #ffffff;
+
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
 
-/* 2. Base Styles */
+/* ===== Force Global RTL / LTR Rules ===== */
+html[dir="rtl"],
+html[dir="rtl"] body,
+html[dir="rtl"] #root {
+  direction: rtl !important;
+  text-align: start !important; 
+  font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+}
+
+html[dir="ltr"],
+html[dir="ltr"] body,
+html[dir="ltr"] #root {
+  direction: ltr !important;
+  text-align: start !important;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ===== Base Styles ===== */
 body {
+  margin: 0;
   background-color: var(--color-bg-page);
   color: var(--color-text);
-  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 h1, h2, h3 {
@@ -25,7 +64,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-/* 3. Reusable Components Classes */
+/* ===== Reusable Components Classes ===== */
 .navbar {
   display: flex;
   align-items: center;
@@ -132,38 +171,3 @@ h1, h2, h3 {
 .btn-secondary:hover {
   background-color: #eff6ff;
 }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-@import "tailwindcss";
-
-/* ===== Custom Theme Tokens (Tailwind v4) ===== */
-@theme {
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-200: #bfdbfe;
-  --color-primary-300: #93c5fd;
-  --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #0062D0;
-  --color-primary-700: #0052b3;
-  --color-primary-800: #003d86;
-  --color-primary-900: #002a5c;
-
-  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
-}
-
-/* ===== Base Styles ===== */
-body {
-  margin: 0;
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#root {
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
->>>>>>> origin/task3-essam

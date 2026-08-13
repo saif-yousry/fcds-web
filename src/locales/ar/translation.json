@@ -11,12 +11,34 @@
     "events": "الفعاليات",
     "contact": "اتصل بنا"
   },
+  "departments":{
+      
+    "view_details": "التفاصيل",
+    "faculty_members": "هيئة التدريس",
+    "departments_title": "الأقسام الأكاديمية",
+    "departments_subtitle": "تعرف على أقسام الكلية والبرامج الأكاديمية المتاحة.",
+    "department_not_found": "القسم غير موجود",
+    "back_to_departments": "العودة للأقسام",
+    "back": "رجوع للأقسام",
+    "view_all_faculty": "عرض كل هيئة التدريس",
+    "department_faculty": "أعضاء هيئة التدريس بالقسم",
+    "no_faculty": "لا يوجد بيانات لأعضاء هيئة التدريس حالياً."
+
+  },
+  "programs": {
+    "programs_title": "البرامج الأكاديمية",
+    "programs_subtitle": "اكتشف برامجنا الأكاديمية المتميزة التي تلبي احتياجات سوق العمل وتواكب التطور التكنولوجي.",
+    "general_programs": "البرامج العامة",
+    "specialized_programs": "البرامج المتخصصة",
+    "general_program": "برنامج عام",
+    "specialized_program": "برنامج متخصص",
+    "program_info": "معلومات البرنامج",
+    "registration_method": "طريقة التسجيل"
+  }
+  ,
   "common": {
     "search": "بحث...",
     "readMore": "اقرأ المزيد",
-<<<<<<< HEAD
-    "notFound": "الصفحة غير موجودة"
-=======
     "notFound": "الصفحة غير موجودة",
     "notFoundDesc": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
     "backHome": "العودة للرئيسية",
@@ -92,6 +114,5 @@
     "valuesCommunity": "خدمة المجتمع",
     "valuesDiversity": "التنوع والشمولية",
     "valuesCollaboration": "التعاون والعمل الجماعي"
->>>>>>> origin/task3-essam
   }
 }

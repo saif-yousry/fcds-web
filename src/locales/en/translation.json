@@ -11,12 +11,33 @@
     "events": "Events",
     "contact": "Contact Us"
   },
+  "departments": {
+    "view_details": "View Details",
+    "faculty_members": "Faculty Members",
+    "departments_title": "Academic Departments",
+    "departments_subtitle": "Discover our faculty departments and available academic programs.",
+    "department_not_found": "Department Not Found",
+    "back_to_departments": "Back to Departments",
+    "back": "Back to Departments",
+    "view_all_faculty": "View All Faculty",
+    "department_faculty": "Department Faculty Members",
+    "no_faculty": "No faculty members available at the moment."
+  },
+  
+  "programs": {
+    "programs_title": "Academic Programs",
+    "programs_subtitle": "Discover our distinguished academic programs designed to meet job market needs and keep pace with technological advancements.",
+    "general_programs": "General Programs",
+    "specialized_programs": "Specialized Programs",
+    "general_program": "General Program",
+    "specialized_program": "Specialized Program",
+    "program_info": "Program Info",
+    "registration_method": "Registration Method"
+  },
+
   "common": {
     "search": "Search...",
     "readMore": "Read More",
-<<<<<<< HEAD
-    "notFound": "Page Not Found"
-=======
     "notFound": "Page Not Found",
     "notFoundDesc": "The page you are looking for does not exist or has been moved.",
     "backHome": "Back to Home",
@@ -92,6 +113,5 @@
     "valuesCommunity": "Community Engagement",
     "valuesDiversity": "Diversity & Inclusion",
     "valuesCollaboration": "Collaboration & Teamwork"
->>>>>>> origin/task3-essam
   }
 }
