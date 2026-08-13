@@ -11,7 +11,6 @@ export default function MainLayout({ children }) {
         {children}
       </main>
 
-      {/* Footer الثابت */}
       <Footer />
     </div>
   );
