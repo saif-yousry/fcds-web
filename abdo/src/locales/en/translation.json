@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "departments": "Departments",
+    "programs": "Academic Programs",
+    "studentAffairs": "Student Affairs",
+    "news": "News & Announcements",
+    "faculty": "Faculty Members",
+    "services": "E-Services",
+    "events": "Events",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "search": "Search...",
+    "readMore": "Read More",
+    "notFound": "Page Not Found",
+    "all": "All",
+    "clearSearch": "Clear search",
+    "clearFilters": "Clear filters"
+  },
+  "news": {
+    "eyebrow": "Latest updates",
+    "title": "News",
+    "description": "Stay up to date with the latest news, activities, and academic updates from FCDS.",
+    "filtersLabel": "News filters",
+    "categoryFilter": "Filter by category",
+    "resultsCount": "{{count}} news item(s)",
+    "noResults": "No news found",
+    "noResultsDescription": "Try another search term or clear the filters.",
+    "clearFilters": "Clear filters",
+    "imagePlaceholder": "News image",
+    "backToNews": "Back to news",
+    "articleNotFound": "News article not found"
+  },
+  "announcements": {
+    "eyebrow": "Important notices",
+    "title": "Announcements",
+    "description": "Important academic and student notices from the Faculty of Computers and Data Science.",
+    "categoryFilter": "Filter announcements by category",
+    "viewAnnouncement": "Announcement",
+    "noResults": "No announcements found",
+    "noResultsDescription": "There are no announcements in this category.",
+    "categories": {
+      "academic": "Academic",
+      "students": "Students",
+      "events": "Events"
+    },
+    "priority": {
+      "high": "Important",
+      "normal": "Notice"
+    }
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Contact Us",
+    "description": "Have a question? Send us a message and the faculty team will get back to you.",
+    "name": "Full name",
+    "email": "Email address",
+    "phone": "Phone number",
+    "message": "Message",
+    "submit": "Send message",
+    "success": "Your message has been submitted successfully.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "location": "Faculty of Computers and Data Science, Alexandria University",
+    "validation": {
+      "nameRequired": "Name is required.",
+      "emailRequired": "Email is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "phoneRequired": "Phone number is required.",
+      "phoneInvalid": "Please enter a valid phone number.",
+      "messageRequired": "Message is required.",
+      "messageShort": "Message must be at least 10 characters."
+    }
+  }
+}
